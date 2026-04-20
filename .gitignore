@@ -4,3 +4,4 @@ __pycache__/
 .venv/
 dist/
 .ipynb_checkpoints/
+uv.lock

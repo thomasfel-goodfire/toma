@@ -1,10 +1,13 @@
+# Toy model of manifolds (TOMA)
+
 <p align="center">
   <img src="assets/logo.png" width="256" alt="toma logo">
 </p>
 
-# Toy model of manifolds (TOMA)
 
 A minimal benchmark for studying how sparse autoencoders recover low-dimensional manifold structure from superposed representations.
+
+> **Start here: [`starter.ipynb`](starter.ipynb)** — end-to-end walkthrough: manifold zoo, SAE training, and recovery metrics.
 
 **Data generating process**
 
@@ -19,10 +22,12 @@ Each `mᵢ` is a manifold contribution: a point sampled from a low-dimensional s
 ## install
 
 ```bash
-git clone https://github.com/goodfire-ai/toma
+git clone https://github.com/thomasfel-goodfire/toma
 cd toma
 uv sync
 ```
+
+Then open **`starter.ipynb`** — it is the entry point for this repo.
 
 ---
 
@@ -43,8 +48,6 @@ contribs = data["contributions"] # (N, M, d)  — mᵢ per sample
 masks    = data["active_masks"]  # (N, M) bool
 thetas   = data["thetas"]        # list[M], intrinsic coords per component
 ```
-
-See `starter.ipynb` for a full walkthrough: manifold zoo visualization, SAE training with [overcomplete](https://github.com/KempnerInstitute/overcomplete), and recovery metric plots.
 
 ---
 
